@@ -1,0 +1,1598 @@
+WHY DEVOPS: TO DELIVER THE PRODUCT VERY SPEEDILY.
+PRODUCT = APPLICATION, SOFTWARE
+
+DEPLOYMENT: PROCESS OF INSTALLING THE APP FROM LOCAL MACHINE TO SERVER.
+HUMANS = HUMAN LIFE CYCLE
+APPS   = SDLC
+
+SDLC : SOFTWARE DEVELOPMENT LIFECYCLE
+
+DEV       OPS
+
+PLAN     DEPLOY
+CODE	 OPERATE
+BUILD	 MONITOR
+TEST
+
+
+COURSE: ADVANCED DEVOPS
+
+AWS, LINUX  (35 days free)
+
+DURATION: 3 MONTHS
+FEE: 10K (2 INSTALL) [REC= 6K]
+TOOLS: 24
+AWS: 15+
+PROJECTS: 6
+EXP: 3+
+TIMINGS: 9:00 - 10:30 (70 MINS CLASS 20 MINS DOUBTS)
+DAYS: MON-SAT
+==================================================================================================
+
+ARCHITECTURE: BLUE-PRINT OF OUR APPLICATION.
+WHO: DEVOPS-ARCHITECTS
+
+
+TYPES:
+1. ONE-TIER ARCHITECTURE
+2. TWO-TIER ARCHITECTURE
+3. THREE-TIER ARCHITECTURE
+4. N-TIER ARCHITECTURE
+
+LAYER = SERVER = TIER
+
+SERVER = SERVES THE SERVICES TO THE END USER (CLIENTS)
+
+TYPES OF SERVERS/LAYERS:
+1. WEB-SERVER
+2. APP-SERVER
+3. DB-SERVER
+
+
+WEB-SERVER:
+PURPOSE: TO SHOW THE APP
+AKA: PRESENTATION-LAYER
+WHO: FRONT-END/UI-UX DEV
+WHAT: WEB TECHNOLOGIES
+EX: HTML, CSS, JS --------------
+
+
+APP-SERVER:
+PURPOSE: TO USE THE APP
+AKA: BUSINESS/LOGIC LAYER
+WHO: BACKEND DEV
+WHAT: PROGRAMMING LANGUAGES
+EX: C, JAVA, PYTHON, .NET ----
+
+DB-SERVER:
+PURPOSE: TO STORE & RETRIEVE DATA
+AKA: DATA LAYER
+WHO: DBA/DBD
+WHAT: DB LANGUAGES
+EX: MYSQL, SQL, POSTGRES --------------
+
+
+1. ONE-TIER ARCHITECTURE: STAND-ALONE APPS
+
+ALL 3 LAYERS WILL BE ON THE LOCAL MACHINE
+IT DONEST REQUITED INTERNET CONNECTION.
+
+EX: VLC
+
+LIMITATION: APP WILL BE INSTALLED AND ACCESSED WITHIN OUR LOCAL MACHINE.
+
+
+2. TWO-TIER ARCHITECTURE: CLIENT-SERVER APPS
+
+WEB & APP SERVERS WILL BE ON LOCAL, DB WILL BE ON INTERNET.
+IT REQUIRED INTERNET CONNECTION.
+
+EX: BANKING APPS
+
+LIMITATION: APP WILL BE INSTALLED AND ACCESSED WITHIN OUR LOCAL MACHINE.
+
+
+3. THREE-TIER ARCHITECTURE: WEB APPS
+
+ALL 3 LAYERS WILL BE ON INTERNET.
+IT REQUIRED INTERNET CONNECTION.
+ANY APP FROM ANY WHERE.
+NO NEED TO INSTALL APP ON LOCAL MACHINE.
+
+EX: YOUTUBE, INSTA, ----------------
+
+
+==========================================================================================
+
+SERVER = SERVERS THE SERVICES TO THE END USER (CLIENT)
+
+
+1. PHYSICAL SERVER = OFFICES, WORKSPACE
+2. VIRTUAL SERVER = DATA CENTERS 
+
+
+AWS CLOUD = SERVER = EC2 INSTANCE
+
+EC2 = ELASTIC COMPUTE CLOUD
+
+CLOUD ACCOUNT = CARDS -- > CREDIT/DEBIT = VISA, MASTERCARD, RUPAY, AMERICAN EXPRESS
+
+STEPS = 7 
+
+1. NAMES & TAGS = TO IDENTIFY THE SERVER
+2. AMI = AMAZON MACHINE IMAGE = OS, SOFTWARES 
+3. INSTANCE TYPE = CPU & RAM [T2.MICRO = 1 CPU & 1 GB]
+4. KEY PAIR = TO LOGIN SERVER SAFELY (1. PUBLIC = AWS, 2. PRIVATE = USER)
+5. NETWORK = [VPC, SECURITY GROUPS]
+VPC = VIRTUAL PRIVATE CLOUD -- > CREATE YOUR OWN NETWORK 
+SG = ALLOW THE TRAFFIC TO SERVER (ports) [0 - 65535] 
+SSH = SECURE SHELL = 22 -- > TO CONNECT TO THE SERVER
+6. STORAGE = EBS VOLUME -- > ELASTIC BLOCK STORAGE
+MIN = 8 GB    MAX = 16TB
+7. SUMMARY
+
+
+=========================================================
+OPERATING SYSTEM: OS
+used to communicate humans with machines.
+interface blw hardware and software.
+
+
+TYPES:
+1. MAC-OS
+2. WINDOWS
+3. LINUX -- > NOT AN OS (ITS A KERNEL)
+
+KERNEL: LOWEST LEVEL OF OS.
+
+
+WHERE IS LINUX:
+
+MILITARY
+SPACE STATIONS
+GAMING INDUSTRY
+MOVIE VFX
+STOCK MARKET
+OIL & GAS 
+
+WHY LINUX:
+96% SERVERS
+86% MOBILE
+ELECTRONIC GADGETS
+LAPTOPS
+
+
+WHAT IS LINUX:
+
+LINUX IS NOT AN OS, ITS A KERNEL.
+
+
+
+INTRO OF LINUX:
+Its a kernel.
+year: 1991   -- > C: 1972
+Who: Linus Torvalds
+type: free & open-source [see, modify, distribute]
+Programming: C programming
+Initial: Freax
+
+
+ADVANTAGES:
+1. FREE
+2. ANTI-VIRUS 
+3. SECURITY
+4. PERFORMANCE
+5. DOWNLOADING SPEED
+6. PROGRAMMING LANGUAGE
+7. ALL NETWORKS
+8. MULTI-USER BASED
+
+
+
+IPHONE: 15 -- >  15+ -- > 15 PRO  -- > 15 PRO MAX
+
+DISTRIBUTION/FLAVOURS:
+UBUNTU  
+REDHAT  
+CENTOS
+FEDORA
+OPEN-SUSE
+KALI LINUX
+ROCKY LINUX
+ALMA LINUX
+AMAZON LINUX
+
+
+ARCHITECTURE:
+
+1. SHELL : Deals with USER-INPUT (commands, script, programming).
+2. DAEMON: Deals with Background Services.
+3. KERNEL: Deals with HARDWARE (CPU, RAM, MEMORY)
+
+
+NOTE: BY DEFAULT WE HAVE EC2-USER ON SERVER
+COMMANDS:
+
+sudo -i 	: to switch to root user (sudo su -)
+whoami		: to show the current user
+who/w		: to show previously logged users
+logout (ctrl d)	: to logout from the current user
+uptime		: from which time the server is running
+ip addr		: to show the ip address
+ip addr	show	: to show the ip address
+ifconfig	: to show the ip address
+hostname -i	: to show the ip address
+clear (ctrl l)	: to clear the screen
+
+
+FILE COMMANDS:
+
+touch file1	: to create a file called file1
+ls/ll		: to list the files
+cat file1	: to show the content of a file
+cat>>file1	: to insert the content to a file
+enter ctrl d	: to save and exit the content
+
+cp file1 file3	: to copy content from file1 to file3
+mv file1 file5	: to rename the file
+rm file1	: to remove the file
+rm file2 -f     : to remove the files forcefully
+rm * -f  	: to remove all the files forecfully
+
+touch file{1..10}: to create file1 to file10
+rm file{1..5} -f: to remove file1 to file5
+
+----------------------------------------------------------------
+
+cat file1	: to print the complete file
+
+head file1	: to print first 10 lines of a file
+head -5 file1	: to print first 5 lines of a file
+head -7 file1	: to print first 7 lines of a file
+
+tail file1	: to print bottom 10 lines of a file
+tail -5 file1	: to print bottom 5 lines of a file
+tail -7 file1	: to print bottom 7 lines of a file
+
+sed -n '7,14p' file1 : to print from line 7 to 14
+
+
+GREP: GLOBAL REGULAR EXPRESSION PRINT
+to search for words.
+
+grep word file1 	: to search for word in file1
+grep word file1 -i	: -i: to avoid case sensitive
+grep word file1 -c	: -c: to print the count
+grep word file1 -v	: -v: to ignore the line which is having word
+
+
+grep 'word1\|word2\|word3' file1 : to search for word in file1
+
+
+============================================================================
+
+EDITORS:
+to insert, modify, delete the content in a file.
+
+TYPES:
+1. VIM/VI
+2. NANO
+
+
+MODES:
+1. COMMAND MODE
+2. INSERT MODE
+3. SAVE 
+
+i	: to insert the content
+esc	: to exit from insert mode
+
+SAVE MODE:
+:w	: to save 
+:q	: to exit 
+:wq	: to save & exit
+
+
+INSERT MODE:
+i	: to insert the content
+I	: starting of line
+A	: Ending of line
+O	: new line above existing line
+o	: new line below existing line
+
+COMMAND MODE:
+gg	: top of file
+shift g	: bottom of file
+7gg	: 7th line of file
+:7	: 7th line of file
+14gg	: 14th line of files
+:14	: 14th line of file
+yy	: copies single line
+3yy	: copies 3 lines
+p	: paste one time
+3p	: paste 3 times
+dd	: to delete a single line
+3dd	: to delete a 3 lines
+u	: to undo
+/word	: to search for a word
+:set number: to print number of lines inside of a file.
+
+---------------------------------------------------
+
+SED: STREAM EDITOR
+TO FIND AND REPLACE A WORD.
+
+sed -i 's/word1/word2/g' file1	: to replace word1 with word2
+sed -i '2c this line is changed' file1 : to replace the line 
+sed -i '4a abcd' file1 : add the new line to file
+sed -i '4d' file1	: to delete the line 4
+sed -i 's/word1/word2/g; s/word3/word4/g' file1	: to replace word1 with word2
+
+
+
+==========================================================
+GIT: GLOBAL INFORMATION TRACKER
+
+GIT = VCS, SCM
+
+VCS: VERSION CONTROL SYSTEM
+TO STORE EACH VERSION OF CODE SEPERATELY.
+
+V1: 1 SERVICE : 100 LINES : REPO-1
+V2: 2 SERVICE : 200 LINES : REPO-2
+V3: 3 SERVICE : 300 LINES : REPO-3 -- > NOT WORKING
+
+ROLLBACK: GOING BACK TO PERVIOUS VERSION OF APPLICATION.
+EX: V3 -- > V2
+
+HOW: BY USING PREVIOUS VERSION OF CODE
+
+
+V-1: INDEX.HTML : 10
+V-2: INDEX.HTML : 20
+V-3: INDEX.HTML : 30
+
+
+WHAT IS GIT:
+
+Git is used to track the files.
+It will maintain multiple versions of the same file.
+It is platform-independent.
+It is free and open-source.
+They can handle larger projects efficiently.
+It is 3rd generation of vcs.
+it is written on c programming
+it came on the year 2005
+
+
+CVCS: CENTRALIZED VERSION CONROL SYSTEM 
+STORES CODE ON SINGLE REPO
+EX: SVN
+
+DVCS: DISTRIBUTED VERSION CONROL SYSTEM 
+STORES CODE ON MULTIPLE REPOS
+EX: GIT
+
+STAGES/ARCHITECTURE OF GIT:
+
+Git will have 3 stages.
+
+1. WORKING DIRECTORY: WHERE WE WRITE CODE.
+2. STAGING AREA: WHERE WE TRACK THE CODE.
+3. REPOSITORY: WHERE WE STORE THE TRACKED CODE.
+
+
+PRACTICAL PART:
+1. CREATE AN EC2 INSTANCE AND CONNECT 
+2. INSTALLING GIT 
+
+yum install git -y
+
+yum: package manager -- > to install packages in Linux
+install: action -- > 
+git: name of package 
+-y: yes
+
+
+
+mkdir Paytm
+cd Paytm
+
+git init -- > local repo called .git
+without .git the commands will not work
+
+
+
+touch index.html	: to create a file
+git status 		: to show status of a file
+git add index.html	: to track the file
+git commit -m "commit-1" index.html : to commit the file
+
+
+create -- > add -- > commit 
+
+git log			: to show commits history
+git log --oneline	: to shows commits on short format
+git log --oneline -2	: to shows last 2 commits 
+
+
+==============================================================================
+
+USER CONFIGURATION:
+git config user.name "raham"
+git config user.email "raham@gmail.com"
+
+
+BRANCHES:
+It's an individual line of development for code.
+we create different branches in real-time.
+each developer will work on their own branch.
+At the end we will combine all branches together.
+Default branch is Master.
+
+git branch		: to list the branches
+git branch movies	: to create a new branch
+git checkout movies	: to switch from one branch to another.
+git checkout -b recharge: to create and switch from one branch to another.
+git branch -m old new	: to rename a branch
+git branch -D movies	: to delete a branch
+
+we cant delete the current branch
+
+PROCESS:
+
+git branch		
+git branch movies	
+git checkout movies
+touch movies{1..5}
+git status
+git add movies*
+git commit -m "dev-1 commits" movies*
+git branch dth	
+git checkout dth
+touch dth{1..5}
+git status
+git add dth*
+git commit -m "dev-2 commits" dth*
+git checkout -b train
+touch train{1..5}
+git add train*
+git commit -m "dev-3 commits" train*
+git checkout -b recharge
+touch recharge{1..5}
+git add recharge*
+git commit -m "dev-4 commits" recharge*
+
+
+Note: here every dev works on the local laptop
+at the end we want all dev codes to create an application.
+so here we use GitHub to combine all dev codes together.
+
+Create a GitHub account and create Repo 
+
+
+git remote add origin https://github.com/revathisiriki78/paytm.git
+git push origin movies
+username:
+password:
+
+Note: in github passwords are not accepted we need to use token 
+
+profile -- > settings -- > developer settings -- > Personal access token -- > classic -- > 
+generate new token -- > classic -- > name: paytm -- > select 6 scopes -- > generate 
+
+git push origin dth
+username:
+password:
+
+
+git push origin train
+username:
+password:
+
+git push origin recharge
+username:
+password:
+
+=================================================================
+
+GIT CLONE: it download code from github(Remote) to git(Local).
+git clone https://github.com/anitalluri00/paytm.git
+
+
+GIT FORK: it download code from github account to another.
+For git clone and git fork repos must be public.
+
+PUBLIC REPO: source code will be visible from internet.
+PRIVATE REPO: source code will be hidden from internet.
+
+
+GIT MERGE: it will merge files blw two different branches
+
+git checkout master
+git merge movies
+git merge train
+
+
+GIT REBASE: used to add files blw two different branches
+git checkout master
+git rebase train
+git rebase recharge
+
+
+MERGE VS REBASE:
+merge for public repos, rebase for private 
+merge stores history, rebase will not store the entire history
+merge will show files, rebase will not show files
+
+
+in GitHub we use Pull Request (PR) to do merging.
+
+
+GIT REVERT: used to revert(get back) the files we merge.
+to undo merge we can use revert.
+
+git revert dth
+git revert recharge
+
+
+======================================================
+
+GIT RESTORE:
+this command will untrack the tracked file.
+git rm --cached file_name 		: before inital commit
+git restore --staged file_name		: after inital commit
+
+this command used to recover the deleted file.
+git restore file_name
+
+GIT PULL:
+used to get the changed files from github to git.
+git pull origin master
+
+GIT FETCH:
+used to show the changed files from github to git.
+git fetch
+
+CHERRY-PICK: Merging the specific files based on commits.
+git cherry-pick commit_id
+
+Process:
+
+mkdir raham
+cd raham/
+touch java{1..3}
+git init
+git add java*
+git commit -m "java-commits" java*
+git branch
+git checkout -b branch1
+touch python{1..5}
+git add python*
+git commit -m "python commits" python*
+touch php{1..5}
+git add php*
+git commit -m "php commits" php*
+touch donet{1..5}
+git add donet*
+git commit -m "dontent commits" donet*
+git log --oneline
+git checkout master
+ll
+git cherry-pick commit_id_of python
+ll
+git cherry-pick commit_id_of php
+
+
+MERGE CONFLICTS:
+it will rise when we merge 2 different branches with same files.
+How to resolve: Manually 
+
+
+vim file1
+im dev-1 writing java on branch-1
+git add index.html
+git commit -m "dev-1 commits" index.html
+git branch -m master branch1
+
+git checkout -b branch2
+vim file1
+im dev-2 writing index.html on branch-2
+git add index.html
+git commit -m "dev-2 commits" index.html
+
+git checkout branch1
+vim file1
+im dev-1 writing index.html on branch-1
+new line
+git add index.html
+git commit -m "dev-1 2nd commits" index.html
+git merge branch2
+
+
+vim index.html
+git add index.html
+git commit -m "merge commits"
+
+
+.gitignore: this file will ignore the files of being tracked.
+if you write any filename on this .gitingore it wont track that file.
+USECASE: cred
+
+Note: . should be mandatory
+
+
+GIT RESET: to undo the commits.
+
+LONG LIVING BRANCHES: these branches we wont delete and we use them frequently.
+EX: Master, Main
+
+SHORT LIVING BRANCHES: these branches we will delete and we dont use them frequently.
+EX: release, bugfix, --------
+
+===============================================================================================================
+
+
+CHICKEN -- > CLEAN -- > MARNET -- > SPICES -- > CHICKEN BIRYANI
+CODE -- > COMPILE -- > TEST -- > ARTIFACT -- >  DEPLOY
+
+
+ARTIFACT: FINAL PRODUCT OF CODE
+TYPES:
+1. JAR : JAVA ARCHIVE : BACKEND CODE
+2. WAR : WEB ARCHIVE  : FRONTEND CODE + BACKEND CODE
+3. EAR : ENTERPISE ARCHIVE : JAR + WAR
+
+
+JAR FILE:
+
+.java -- > compile -- > .class -- > .jar file
+
+.java	: basic raw
+.class	: executable file
+.jar	: artifact
+
+all the artifacts are going to created by a build too1.
+
+MAVEN:
+Maven is the build tool.
+its a free and opensource.
+build: process of adding the libs & dependencies to code.
+its is also called as Project management too1.
+it will manage the complete structure of the project.
+the main file in the maven tool is POM.XML
+
+POM.XML: its a file which consist of complete project information.
+Ex: name, artifact, tools, libs, dep --------
+
+POM: PROJECT OBJECT MODEL
+XML: EXTENSIBLE MARKUP LANGUAGE
+
+WHO GIVE POM.XML : DEVELOPERS
+dev will give both code and pom.xml in github
+
+maven is written on java by apache software foundation.
+supports: JAVA-1.8.0
+year: 2004
+home path: .m2
+
+
+PRATCICAL PART:
+1. CREATE AN EC2 INSTANCE AND CONNECT
+2. yum install git java-1.8.0-openjdk maven tree -y
+3. git clone https://github.com/devopsbyraham/jenkins-java-project.git
+4. cd jenkins-java-project
+
+
+MAVEN LIFECYCLE:
+GOALS : a command used to run a task.
+Goals refers pom.xml to execute.
+
+
+PLUGIN: its a small software with makes our work automated.
+instead of downloading tools we can download plugins.
+this plugins will download automatically when we run goals.
+
+
+1. mvn compile : used to compile the code (.java [src] -- > .class [target])
+2. mvn test    : used to test the code    (.java [test] -- > .class [target])
+3. mvn package : used to create artifact 
+4. mvn install : used to copy artifact to .m2 (project folder -- > .m2)
+5. mvn clean   : to delete the target folder
+6. mvn clean package: compile -- > install
+
+
+PROBLEMS WITHOUT MAVEN:
+1. we cant create artifacts.
+2. We cant create project structure.
+3. we cant build and deploy the apps.
+
+ALTERNATIVIES:
+MAVEN, ANT, GRADLE 
+
+MAVEN VS ANT:
+1. MAVEN IS BUILD & PROJECT MANAGEMNT, ANT IS ONLY BUILD TOOL
+2. MAVEN HAS POM.XML, ANT HAS BUILD.XML
+3. MAVEN HAS A LIFECYCLE, ANT WILL NOT HAVE LIFECYCLE
+4. MAVEN PLUGINS ARE REUSABLE, ANT SCRIPTS ARE NOT RESUEABLE.
+5. MAVEN IS DECLARATIVE, ANT IS PROCEDURAL.
+
+PROGRAMMING VS BUILD:
+
+JAVA	: MAVEN
+PYTHON	: GRADLE
+.NET	: VS CODE
+C, C#	: MAKE FILE
+node.js	: npm
+
+
+MAVEN WE CAN USE FOR BOTH JAVA & PYTHON.
+BUT IT PRIMARY SUPPORT IS FOR JAVA.
+
+
+------------------------------------------------
+JENINS IS A CI/CD TOOL.
+REALITY: JENKINS IS ONLY FOR CI.
+
+CI : CONTINOUS INTEGRATION : CONTINOUS BUILD + CONTINOUS TEST (OLD CODE WITH NEW CODE)
+
+DAY-1: 100 LINES : BUILD + TEST
+DAY-2: 200 LINES : BUILD + TEST
+DAY-3: 300 LINES : BUILD + TEST
+
+BEFORE CI:
+MANUAL PROCESS
+TIME WASTE
+
+AFTER CI:
+AUTOMATED PROCESS
+TIME SAVING
+
+CD: CONTINOUS DELIVERY/DEPLOYMENT
+
+ENV:
+
+PRE-PROD/NON-PROD:
+DEV	: developers
+QA	: testers
+UAT	: clients
+
+LIVE/PROD ENV:
+PROD	: users
+
+
+CONTINOUS DELIVERY: Deploying the application to production in manual.
+CONTINOUS DEPLOYMENT: Deploying the application to production in automatic.
+
+
+PIPELINE: 
+
+WAKEUP -- > DAILY ACTIVITIES -- > BREAKFAST -- > LUNCH -- > CLASS
+CODE -- > COMPILE -- > TEST -- > ARTIFACT -- > DEPLOY
+
+SETP BY STEP EXECUTION OF A PROCESS.
+SERIES OF EVENTS INTERLINKED WITH EACHOTHER.
+
+
+JENKINS: 
+ITS A FREE AND OPEN-SOURCE TOOL.
+IT IS PLATFORM INDEPENDENT.
+JENKINS WRITTEN ON JAVA.
+IT CONSIST OF PLUGINS.
+WE HAVE COMMUNITY SUPPORT.
+IT CAN AUTOMATE ENTIRE SDLC.
+IT IS OWNED BY SUN MICRO SYSTEM AS HUDSON.
+HUDSON IS PAID VERSION.
+LATER ORACLE BROUGHT HUDSON AND MAKE IT FREE.
+LATER HUDSON WAS RENAMED AS JENKINS.
+INVENTOR: Kohsuke Kawaguchi
+PORT NUMBER: 8080
+JAVA: JAVA-11/17
+DEFAULT PATH: /var/lib/jenkins
+
+ALTERNATIVES:
+BAMBOO, GO CI, CIRCLE CI, TARVIS, SEMAPHORE, BUDDY BUILD MASTER, GITLAB, HARNESS
+ARGOCD -----
+
+CLOUD: AWS CODEPIPELINE, AZURE PIPLEINE ---------------------
+
+
+
+SETUP: Craete an EC2 and Include all traffic in sg
+
+#STEP-1: INSTALLING GIT JAVA-1.8.0 MAVEN 
+yum install git java-1.8.0-openjdk maven -y
+
+#STEP-2: GETTING THE REPO (jenkins.io --> download -- > redhat)
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+#STEP-3: DOWNLOAD JAVA11 AND JENKINS
+amazon-linux-extras install java-openjdk11 -y
+yum install jenkins -y
+update-alternatives --config java
+
+#STEP-4: RESTARTING JENKINS (when we download service it will on stopped state)
+systemctl start jenkins.service
+systemctl status jenkins.service
+
+CONNECT:
+copy-public-ip:8080 (browser)
+cat /var/lib/jenkins/secrets/initialAdminPassword (server)
+paster password on browser -- > installing plugins --- > user details -- > start
+
+
+JOB: it is used to perform task.
+to do any work or task in jenkins we need to create a job.
+
+to run commands we need to select execute shell on build steps.
+
+build now: to run job
+workspace: place where our job outputs will store
+
+CREATING A JOB:
+NEW ITEM -- > NAME: cijob -- > FREESTYLE -- > OK -- > SCM -- > GIT -- > REPOURL: https://github.com/devopsbyraham/jenkins-java-project.git -- >Build Steps -- > ADD Build Steps -- > Execute shell -- > mvn clean package -- > save -- > build now
+
+WORKSPACE: where your job output is going to be stored
+Default: /var/lib/jenkins/workspace
+
+configure -- > advance -- > use custom workspace -- > /root/raham
+
+mkdir raham
+cd raham
+chown jenkins:jenkins /root/
+chown jenkins:jenkins /root/raham/
+
+===========================================================================
+SETTING CI SERVER USING SCRIPT:
+
+CREATE A SERVER
+sudo -i 
+
+vim jenkins.sh
+
+#STEP-1: INSTALLING GIT JAVA-1.8.0 MAVEN 
+yum install git java-1.8.0-openjdk maven -y
+
+#STEP-2: GETTING THE REPO (jenkins.io --> download -- > redhat)
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+#STEP-3: DOWNLOAD JAVA11 AND JENKINS
+amazon-linux-extras install java-openjdk11 -y
+yum install jenkins -y
+update-alternatives --config java
+
+#STEP-4: RESTARTING JENKINS (when we download service it will on stopped state)
+systemctl start jenkins.service
+systemctl status jenkins.service
+
+:wq
+
+To run script: sh jenkins.sh
+
+To execute commands on jenkins use execute shell under build steps.
+
+VARIABLES:
+it is used to store values that are going to change frequently.
+ex: date, season -----
+
+
+
+TYPES OF VARIABLES IN JENKINS:
+1. USER DEFINED
+2. JENKINS ENV
+
+1. USER DEFINED VARIABLES: these are defined by user
+
+a. Local Variable: Variable will work inside of job.
+will be working for only single job.
+
+NEW ITEM -- > NAME: ABC -- > FREESTYLE -- > OK -- > BUILD -- >EXECUTE SHELL
+
+name=raham
+echo "hai all my name is $name, $name is from hyderabad, $name is teaching devops"
+
+
+b. Global Variable: Variable will work outside of job.
+will be working for multiple job.
+
+
+Dashboard -- > Manage Jenkins -- > System -- > Global properties  -- > Environment variables -- > add : Name: name value: raham -- > save 
+
+NOTE: while defining variables spaces will not be given.
+local variables will be high priority.
+
+Limitation: some values cant be defined by user because these values will change build by build.
+ex: build number, time, name, url -----
+
+2. JENKINS ENV VARIABLES: these are defined by Jenkins itself.
+a. these variables can be change from build to build.
+b. these variables will be on upper case.
+c. these variables can be defined only once.
+
+echo "the build number is $BUILD_NUMBER, the job name is $JOB_NAME"
+
+printenv: gives all env vars of jenkins
+
+
+-------------------------------------------------------------------------
+find / -name jenkins.service
+find command used to find the path of a file.
+
+when we modify any file from system folder we need to reload daemon
+
+ADMIN TASKS:
+1. CHANGING PORT NUMBER OF JENKINS:
+
+vim /usr/lib/systemd/system/jenkins.service
+line-70: 8080=8090 -- > save and exit
+systemctl daemon-reload
+systemctl restart jenkins.service
+
+When we change configuration of any service we need to restart.
+
+2. PASSWORDLESS LOGIN
+
+vim /var/lib/jenkins/config.xml
+line-10: true=false
+systemctl daemon-reload
+systemctl restart jenkins.service
+
+now check the jenkins dashboard it wont ask password
+
+
+3. HOW TO RESOLVE THE ISSUE IF JENKINS SERVER CRASHED ?
+stop the jenkins server and start it 
+systemctl restart jenkins
+
+When we stop server the services will be also stopped
+so we want to restart them 
+
+systemctl stop jenkins.service
+systemctl restart Jenkins.service
+
+
+BUILD EXECUTORS & PARALLEL BUILDS:
+Jenkins will run the jobs sequentially (one by one)
+if i want to run multiple builds at same time we can configure like this
+
+job -- > configure -- > Execute concurrent builds if necessary -- > save -- > build now 2 times
+now we can see 2 jobs will be running on same time.
+
+BUILD EXECUTORS: max number of builds we can run
+build-executor status -- > Built-In Node -- > Configure -- > 2 - 5 -- >save
+now build 5 times
+
+
+WHEN WE STOP SERVER:
+1. IP WILL CHANGE
+2. SERVICES WILL BE STOPPED
+
+=================================================================================
+
+CRON JOB: We can schedule the jobs that need to be run at particular intervals.
+here we use cron syntax
+cron syntax has * * * * *
+each * is separated by space
+
+*	: minutes
+*	: hours
+*	: date
+*	: month
+*	: day of week (sun=0, mon=1 ----)
+
+6:45 pm 30 July Tuesday
+0 * 30 7 2
+
+49 16 19 6 3
+create a ci job -- > Build Triggers -- > Build periodically -- > * * * * * -- > save
+
+CRONTAB-GENERATOR: https://crontab.guru/
+
+limitation: it will not check the code is changed or not.
+
+
+POLL SCM: 
+in pollscm we will set time limit for the jobs.
+if dev commit the code it will wait until the time is done.
+in given time if we have any changes on code it will generate a build
+
+create a ci job -- > Build Triggers -- > poll scm -- > * * * * * -- > save
+commit the changes in GitHub then wait for 1 min.
+
+LIMITATION:
+1. in pollscm, we need to wait for the time we set.
+2. we will get the last commit only.
+
+WEBHOOK: it will trigger build the moment we change the code.
+here we need not to wait for the build.
+
+repo -- > settings -- > webhooks -- > add webhook -- > Payload URL (jenkins url) -- > http://35.180.46.134:8080/github-webhook/  -- > Content type -- > application/json -- > add
+
+create ci job -- > Build Triggers: GitHub hook trigger for GITScm polling -- > save
+
+
+BUILD SCRIPTS: to make jenkins builds from remote loc using script/
+give token 
+give url on other browser.
+
+THROTTLE BUILD:
+
+To restrict the builds in a certain time or intervals.
+if we dont restrict due to immediate builds jenkins might crashdown.
+
+by default jenkins will not do concurrent builds.
+we need to enable this option in configuration.
+
+Execute concurrent builds if necessary -- > tick it
+
+create a ci job -- > configure -- > Throttle builds -- > Number of builds: 3 -- > time period : hours -- > save
+
+now it will take 20 minutes of gap for each build.
+
+CUSTOM THEMES:
+
+dashboard -- > manage Jenkins -- > Appearance -- > Customizable theme -- > CSS
+https://github.com/alefnode/jenkins-themes
+===================================================================================
+
+PIPELINE: STEP BY EXECUTION OF A PROCESS
+SERIES OF EVENTS INTERLINKED WITH EACH OTHER.
+code -- > build -- > test -- > artifact -- > deployment
+IF PIPELINE FAILS ON STAGE-1 IT WONT GO FOR STAGE-2.
+
+
+why to use ?
+to automate the work.
+to have clarity about the stage.
+
+TYPES:
+1. DECLARATIVE
+2. SCRIPTED
+
+pipeline syntax:
+to write the pipeline we use DSL.
+We use Groovy Script for jenkins Pipeline.
+it consists of blocks that include stages.
+it includes () & {} braces. 
+
+
+SHORTCUT: PASSS
+
+P	: PIPELINE
+A	: AGENT
+S	: STAGES
+S	: STAGE
+S	: STEPS 
+
+
+SINGLE STAGE: this pipeline will have only one stage.
+
+EX-1:
+pipeline {
+    agent any 
+    
+    stages {
+        stage('abc') {
+            steps {
+               sh 'touch file1'
+            }
+        }
+    }
+}
+
+EX-2:
+pipeline {
+    agent any 
+    
+    stages {
+        stage('raham') {
+            steps {
+                sh 'touch file2'
+            }
+        }
+    }
+}
+
+MULTI STAGE: this pipeline will have more than one stage.
+
+pipeline {
+    agent any
+    
+    stages {
+        stage ('two') {
+            steps {
+                sh 'lsblk'
+            }
+        }
+        stage ('three') {
+            steps {
+                sh 'lscpu'
+            }
+        }
+        stage ('four') {
+            steps {
+                sh 'lsmem'
+            }
+        }
+    }
+}
+
+
+CI PIPELINE:
+
+CODE + BUILD + TEST + ARTIFACT
+
+pipeline {
+    agent any
+    
+    stages {
+        stage ('checkout') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+            }
+        }
+        stage ('build') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        stage ('test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage ('artifact') {
+            steps {
+                sh 'mvn package'
+            }
+        }
+    }
+}
+
+
+PIPELINE AS A CODE: Running more than one command/action inside a single stage.
+to reduce the length of the code.
+to save the time.
+
+pipeline {
+    agent any
+    
+    stages {
+        stage ('checkout') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                sh 'mvn compile'
+                sh 'mvn test'
+                sh 'mvn package'
+            }
+        }
+    }
+}
+
+MULTI STAGE PIPELINE AS A CODE: Running more than one command/action in multiple stages.
+
+
+pipeline {
+    agent any
+    
+    stages {
+        stage ('one') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                sh 'mvn compile'
+            }
+        }
+        stage ('two') {
+            steps {
+                sh 'mvn test'
+                sh 'mvn package'
+            }
+        }
+    }
+}
+
+PAAC OVER SINGLE SHELL: Running all the shell commands on a single shell.
+
+pipeline {
+    agent any
+    
+    stages {
+        stage ('one') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                sh '''
+                mvn compile
+                mvn test
+                mvn package
+                '''
+            }
+        }
+    }
+}
+
+
+INPUT PARAMETERS: BASED ON USER INPUT THE PIPELINE IS GOING TO EXECUTE.
+used to avoid the mistakes.
+pipeline will wait until we provide the input.
+
+pipeline {
+    agent any
+    
+    stages {
+        stage ('checkout') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+            }
+        }
+        stage ('build') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        stage ('test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage ('artifact') {
+            steps {
+                sh 'mvn package'
+            }
+        }
+        stage ('deploy') {
+            input {
+                message "is your inputs correct ?"
+                ok "yes"
+            }
+            steps {
+                echo "my code is deployed"
+            }
+        }
+    }
+}
+NOTE: In real time providing manual approval is best practise for Jenkins pipelines.
+
+NOTE: if we have syntax issue none of the stages will execute.
+
+DIFF BLW SCRIPTED VS DECLARATVE
+
+SCRIPTED: 	DECLARATIVE: 
+SHORT   	LONG
+NO STAGES       IT HAS STAGES
+START NODE      START WITH PIPELINE
+
+=====================================================================================
+MASTER AND SLAVE:
+it is used to distribute the builds.
+it reduce the load on jenkins server.
+communication blw master and slave is ssh.
+Here we need to install agent (java-11).
+slave can use any platform.
+SLAVE IS your instance.
+label = way of assigning work for slave.
+
+SETUP:
+#STEP-1 : Create a server and install java-11
+amazon-linux-extras install java-openjdk11 -y
+
+#STEP-2: SETUP THE SLAVE SERVER
+Dashboard -- > Manage Jenkins -- > Nodes  -- > New node -- > nodename: abc -- > permanaent agent -- > save 
+
+CONFIGURATION OF SALVE:
+
+Number of executors : 3 #Number of Parallel builds
+Remote root directory : /tmp #The place where our output is stored on slave sever.
+Labels : swiggy #place the op in a particular slave
+useage: last option
+Launch method : last option 
+Host: (your privte ip)
+Credentials -- > add -- >jenkins -- > Kind : ssh username with privatekey -- > username: ec2-user 
+privatekey : pemfile of server -- > save -- > 
+Host Key Verification Strategy: last option
+
+DASHBOARD -- > JOB -- > CONFIGURE -- > RESTRTICT WHERE THIS JOB RUN -- > LABEL: SLAVE1 -- > SAVE
+
+BUILD FAILS -- > WHY -- > WE NEED TO INSTALL PACKAGES
+yum install git java-1.8.0-openjdk maven -y
+
+
+pipeline {
+    agent {
+        label 'two'
+    }
+    
+    stages {
+        stage('one') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+                sh '''
+                mvn compile
+                mvn test
+                mvn package
+                mvn install
+                mvn clean package
+                '''
+            }
+        }
+    }
+}
+
+
+======================================================
+POST BUILD ACTIONS:
+Actions that perform after build is done.
+
+
+1. always	: executes always
+2. success	: executes when build is success only
+3. failure	: executes when build is failed only
+
+
+pipeline {
+    agent any
+    
+    stages {
+        stage('checkout') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage('Artifacts') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+    }
+    post {
+        always {
+            echo "this build is completed"
+        }
+    }
+}
+
+========================================================================
+
+
+NEXUS:
+Its an Artifactory storage service.
+used to store artifacts on repo. (.JAR, .WAR, .EAR)
+Nexus server -- > Repo -- > Artifact
+we can use this server to rollback in real time.
+it req t2.medium 
+nexus uses java-1.8.0
+PORT: 8081
+
+ALTERTAVIVES: JFROG, S3, -----
+
+SETU SCIPT:
+https://github.com/RAHAMSHAIK007/all-setups.git
+
+STEPS: signin -- > username: admin & passowrd: /app/sonatype-work/nexus3/admin.password -- > next -- > set passowrd -- > disable ananamous access -- > save
+
+CREATING REPO:
+settings symbol -- > repositories -- > new -- > maven2(hosted) -- > name -- > save
+
+NOTE: to integrate any tool with Jenkins we need to download the plugin.
+
+NEXUS INTEGRATION TO PIPELINE:
+1. Download the plugin (Nexus Artifact Uploader)
+Manage Jenkins -- > plugins -- > Available Plugins -- > Nexus Artifact Uploader -- > install.
+2. Configure it to pipeline by using pipeline syntax
+
+NOTE: All the information will be available on pom.xml file.
+
+
+PIPELINE:
+
+pipeline {
+    agent any
+    
+    stages {
+        stage('checkout') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage('artifact') {
+            steps {
+                sh 'mvn package'
+            }
+        }
+        stage('Artifact upload') {
+            steps {
+                nexusArtifactUploader artifacts: [[artifactId: 'NETFLIX', classifier: '', file: 'target/NETFLIX-1.2.2.war', type: '.war']], credentialsId: '968c23dd-b648-4f15-91bf-7d76981a1218', groupId: 'in.RAHAM', nexusUrl: '100.25.197.110:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'netflix', version: '1.2.2'
+            }
+        }
+    }
+}
+
+
+TOMCAT:
+
+WEBSITE: FRONTEND -- > DB IS OPT
+WEBAPP: FRONTEND + BACKEND -- > DB IS MANDATORY
+
+WEB APPLICATION SERVER/APPLICATION SERVER/APP SERVER = TOMCAT
+
+ITS A WEB APPLICATION SERVER USED TO DEPLOY JAVA APPLICATIONS.
+IT IS WRITTEN ON JAVA LANGUAGE.
+AGENT: JAVA
+PORT: 8080
+WE CAN DEPLOY OUR ARTIFACTS.
+ITS FREE AND OPENSOURCE.
+Its Platform Independent.
+YEAR: 1999 
+
+war : tomcat/webapps
+jar : tomcat/lib
+
+ALTERNATIVES: NGINX, IIS, WEBSPHERE, JBOSS, GLASSFISH
+
+
+SETUP: CREATE A NEW SERVER
+INSTALL JAVA: amazon-linux-extras install java-openjdk11 -y
+
+STEP-1: DOWNLOAD TOMCAT (dlcdn.apache.org)
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz
+
+STEP-2: EXTRACT THE FILES
+tar -zxvf apache-tomcat-9.0.91.tar.gz
+
+STEP-3: CONFIGURE USER, PASSWORD & ROLES
+vim apache-tomcat-9.0.91/conf/tomcat-users.xml
+
+ 56   <role rolename="manager-gui"/>
+ 57   <role rolename="manager-script"/>
+ 58   <user username="tomcat" password="raham123" roles="manager-gui, manager-script"/>
+
+STEP-4: DELETE LINE 21 AND 22
+vim apache-tomcat-9.0.91/webapps/manager/META-INF/context.xml
+
+STEP-5: STARTING TOMCAT
+sh apache-tomcat-9.0.91/bin/startup.sh
+
+CONNECTION:
+COPY PUBLIC IP:8080 
+manager apps -- > username: tomcat & password: raham123
+========================================================================
+
+RBAC:
+RBAC: ROLE BASE ACCESS CONTROL.
+TO restrict the user PERMISSIONS in jenkins.
+
+suresh	= fresher
+raham	= exp 
+
+STEP-1: USER CREATION
+manage jenkins -- > users -- > create users -- > suresh: fresher 
+
+NOTE: By default every user in Jenkins get complete access while login.
+
+STEP-2: PLUGIN DOWNLOADING
+Dashboard
+Manage Jenkins
+Plugins
+Available plugin
+Role-based Authorization Strategy  
+
+STEP-3: CONFIGURE THE PLUGIN
+Dashboard
+Manage Jenkins
+Security
+Authorization 
+Role-based  Strategy  
+SAVE
+
+STEP-4: MANAGE AND ASSIGN USERS
+manage roles -- > add -- > fresher & exp -- > fresher: overall read & exp: admin -- > save
+assign roles -- > add user -- > rajesh: fresher -- > save
+
+
+HOW TO ENABLE SINGLE JOB PERMISSION:
+use project based authorization strategy.
+
+http://34.201.244.26:8080/NETFLIX-1.2.2.(3)/
+
+Dashboard
+Manage Jenkins
+Security
+Authorization 
+project based authorization strategy  -- > add user -- > read access
+SAVE
+
+job --> config -- > Enable project-based security
+add user -- > suresh -- >give read and build access
+
+
+
+
+PROJECT:
+
+STEPS:
+1. CREATE JENKINS SERVER 
+2. CREATE 2 SLAVES AND CONFIGURE THEM TO JENKINS
+3. INSTALL TOMCAT ON SLAVE
+4. ADD CREDENTIALS OF SLAVE TO JENKINS
+5. CREATE NEXUS SERVER
+6. DOWNLOAD PLUGIN  Nexus Artifact Uploader
+7. CONFIGURE NEXUS ON JENKINS
+5. INSTALL DEPLOY TO CONTAINER PLUGIN
+6. WRITE AND RUN THE PIPELINE 
+
+GIT 
+GITHUB
+MAVEN
+JENKINS
+TOMCAT
+NEXUS
+SONARQUBE
+
+pipeline {
+    agent {
+        label 'slave1'
+    }
+    
+    stages {
+        stage('checkout') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage('Artifact') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        stage('nexus upload') {
+            steps {
+                nexusArtifactUploader artifacts: [[artifactId: 'NETFLIX', classifier: '', file: 'target/NETFLIX-1.2.2.war', type: 'war']], credentialsId: 'd5f69729-fd4a-4ba2-baa9-91d20e34aeb1', groupId: 'in.RAHAM', nexusUrl: '18.206.123.44:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'netflix', version: '1.2.2'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                deploy adapters: [
+                  tomcat9(
+                    credentialsId: 'cf89c0c9-2fe8-4ae9-91f6-44af3bf240ab',
+                    path: '',
+                    url: 'http://54.208.15.180:8080/'
+                    )    
+                ],
+                contextPath: 'netflix',
+                war: 'target/*.war'
+            }
+        }
+    }
+}
+
